@@ -12,3 +12,8 @@ button.addEventListener('click',(e)=>{
     }
     
 })
+
+let button2=document.querySelector('#btn2')
+button2.addEventListener('click',()=>{
+    document.querySelector('#print').innerHTML='Hello Guys'
+})
