@@ -9,11 +9,10 @@ button.addEventListener('click',(e)=>{
     }else{
         document.querySelector('.user-name').innerHTML=username.value
         document.querySelector('.user-email').innerHTML=email.value
+        localStorage.setItem('username', username.value)
+        localStorage.setItem('email', email.value)
+
     }
     
 })
 
-let button2=document.querySelector('#btn2')
-button2.addEventListener('click',()=>{
-    document.querySelector('#print').innerHTML='Hello Guys'
-})
